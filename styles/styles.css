@@ -10,19 +10,51 @@ Table of Contents:
         3.5 Footer
 ////////////////////////////////////////////////////////////////////////*/
 
-
+/*grijs #899CA0 en donkergroen #1C2B32*/
 
 /*////////////////////////
     1. Global Styles
 ////////////////////////*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 
 /*////////////////////////
     2. Typography
 ////////////////////////*/
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 
+}
 
+button, input {
+    font-family: inherit;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 100px;
+    font-weight: 700;
+}
+
+button {
+    font-weight: 700;
+    background-color: #1C2B32;
+    color: #fff;
+}
+
+::placeholder {
+    color: black;
+    opacity: 1; /* is voor firefox*/
+}
 
 /*////////////////////////
     3. Areas
@@ -31,7 +63,11 @@ Table of Contents:
 
 
 /*///////////// 3.1 Header /////////////*/
-
+.header-container {
+    max-width: 1000px;
+    text-align: center;
+    background-image: url("assets/images/mountains.jpg");
+}
 
 
 /*///////////// 3.2 Testimonial /////////////*/
