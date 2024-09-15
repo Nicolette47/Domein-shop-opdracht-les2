@@ -47,7 +47,7 @@ body {
 
 button, input {
     font-family: inherit;
-    padding: 15px;
+    font-size: 14px;
 }
 
 
@@ -68,44 +68,76 @@ h2 {
 ////////////////////////*/
 
 /*///////////// 3.1 Header /////////////*/
-header {
+.header-section {
     background-image: url("../assets/images/mountains.jpg");
     background-size: cover;
     background-position: center;
     padding-bottom: 150px;
     text-align: center;
+    position: relative;
+    width: 100%;
+    height: 500px
 }
 
 
-.header-container {
+.header-info {
     max-width: 1000px;
-    padding: 150px;
     text-align: center;
+    margin: 0;
+    position: absolute;
+    left: 29%
 }
 
-.header-container button {
-    font-weight: 700;
+.header-info button {
     background-color: #1C2B32;
     color: #fff;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
-    margin-left: -7px;
-    border: none;
+    margin: -7px;
+    padding: 12px;
+    border: 2px solid black;
 }
 
-input {
+.domain-name-field {
+    background-color: transparent;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
-    border: none;
+    padding: 12px 100px 12px 12px;
+    border: 2px solid black;
 }
 
-::placeholder {
+.domain-name-field::placeholder {
     color: black;
     opacity: 1; /* is voor firefox*/
 }
+/*
+.header-info button {
+    background-color: #1C2B32;
+    color: #fff;
+    border-color: black;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-left: -7px;
+    font-size: 10px;
+    padding: 10px;
+}
 
-.header-container p {
-    padding: 30px;
+
+
+.domain-name-field {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding: 10px;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    background-color: transparent;
+}
+*/
+
+
+
+.header-info p {
+    padding: 20px;
 }
 
 
